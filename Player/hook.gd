@@ -30,7 +30,8 @@ func _process(delta):
 		self.rotation = Vector2.UP.angle_to(\
 			attached_to.get_global_position() - self.get_parent().get_global_position())
 #		$point.position.y = -get_parent().get_global_position().distance_to(attached_to.get_global_position())
-		$point.position.y = -distance
+		$point.position.y = -self.get_global_position().distance_to(attached_to.get_global_position())
+		$rope.set_cast_to($point.position)
 	else:
 		# rotate the hook and have point just travel on y
 		self.rotation = Vector2.UP.angle_to(\
