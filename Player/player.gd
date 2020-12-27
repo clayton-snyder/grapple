@@ -4,6 +4,7 @@ extends KinematicBody2D
 
 ## direction doesn't work when you let go of point if you're swinging left (????) (has to do with multiplying l_vel by -1) # FIXED
 ## When you are moving right and hit a point, you switch to the left swinging
+## Swing strength is a little too long, it should peter out over time
 
 var velocity : Vector2 = Vector2(0, 0)
 var swing_vel : Vector2 = Vector2(0, 0)
@@ -79,7 +80,7 @@ func attach_to(attached_to_body : Node2D):
 	attached = true
 	attached_to = attached_to_body
 	dist = self.get_global_position().distance_to(attached_to_body.get_global_position())
-	a_vel = velocity.length() / dist
+	a_vel = -velocity.length() / dist
 
 func detach():
 	if attached:
