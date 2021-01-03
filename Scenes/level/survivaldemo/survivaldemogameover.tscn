@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="survival_game_over" type="Node2D"]
+
+[node name="score_label" type="RichTextLabel" parent="."]
+margin_left = 84.0
+margin_top = 93.0
+margin_right = 890.0
+margin_bottom = 449.0
+text = "game over"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="grapple"
-run/main_scene="res://Scenes/World.tscn"
+run/main_scene="res://Scenes/level/survivaldemo/survivaldemo.tscn"
 config/icon="res://icon.png"
 
 [importer_defaults]
@@ -78,6 +78,7 @@ player_shoot={
 [layer_names]
 
 2d_physics/layer_2="grapplable"
+2d_physics/layer_7="die_zone"
 
 [rendering]
 

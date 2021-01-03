@@ -69,6 +69,8 @@ func _physics_process(delta):
 			velocity.x = move_speed
 		if Input.is_action_just_pressed("player_jump") and self.is_on_floor():
 			velocity.y = jump_power * -1
+#		if Input.is_action_pressed("player_up"):
+#			velocity.y = -25000
 
 		velocity = self.move_and_slide(velocity, NORMAL_FLOOR)
 		if self.is_on_floor():
@@ -76,7 +78,6 @@ func _physics_process(delta):
 		velocity.y = min(TERMINAL_VEL, velocity.y + gravity_norm * delta)
 
 func attach_to(attached_to_body : Node2D):
-	print("called attach_to with " + attached_to_body.get_name())
 	attached = true
 	attached_to = attached_to_body
 	dist = self.get_global_position().distance_to(attached_to_body.get_global_position())
@@ -90,3 +91,6 @@ func detach():
 		velocity = new_dir * abs(l_speed)
 		attached = false
 	attached_to = null
+
+func get_class():
+	return "PLAYER"
