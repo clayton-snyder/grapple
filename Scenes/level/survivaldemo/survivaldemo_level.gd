@@ -48,5 +48,5 @@ func increment_point():
 	var new_point = point_scene.instance()
 	new_point.position.x = rng.randf_range(100, 650.0)
 	new_point.position.y = point_create_y
-	self.add_child(new_point)
+	self.add_child_below_node($player, new_point)
 	point_create_y -= 150
