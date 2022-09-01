@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/acid_sizzle.mp3-9966cb861c4cb16c533056f412d97cb8.mp3str"
+
+[deps]
+
+source_file="res://Media/acid_sizzle.mp3"
+dest_files=[ "res://.import/acid_sizzle.mp3-9966cb861c4cb16c533056f412d97cb8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

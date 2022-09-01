@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/lavabubble.ogg-453ebe1e36e9b09fd1abce5f3d9acaaa.oggstr"
+
+[deps]
+
+source_file="res://Media/lavabubble.ogg"
+dest_files=[ "res://.import/lavabubble.ogg-453ebe1e36e9b09fd1abce5f3d9acaaa.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

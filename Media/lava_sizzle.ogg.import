@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/lava_sizzle.ogg-7bc1fb15900a1900a7bfad2ef46ec52d.oggstr"
+
+[deps]
+
+source_file="res://Media/lava_sizzle.ogg"
+dest_files=[ "res://.import/lava_sizzle.ogg-7bc1fb15900a1900a7bfad2ef46ec52d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
